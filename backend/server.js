@@ -35,6 +35,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static('uploads'));
 app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 
+app.get('/', (req, res) => {
+  res.send('✅ Expense Tracker API is running');
+});
+
+
 // Routes
 app.use('/api/auth', authRoute);        // register, login, refresh, logout
 app.use('/api/user', userRoutes);       // profile, update, delete
