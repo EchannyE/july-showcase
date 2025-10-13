@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useCallback } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import TransactionsTable from '../components/TransactionsTable';
+import TransactionsTable from '../Components/TransactionsTable';
 import SpendingChart from '../Pages/SpendingChart'; // Assumed component path
 import useAuth from '../context/useAuth';
 import auth, { getSpendingStats } from '../Api/auth';

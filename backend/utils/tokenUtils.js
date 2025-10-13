@@ -1,4 +1,4 @@
-// utils/tokenUtils.js
+
 import jwt from 'jsonwebtoken';
 
 export const createAccessToken = (user) => {

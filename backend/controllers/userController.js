@@ -1,5 +1,3 @@
-// backend/controllers/userController.js - User controller for AI Financial Assistant
-
 import User from '../models/User.js';
 
 // Get user profile
