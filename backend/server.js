@@ -41,14 +41,14 @@ app.get('/', (req, res) => {
 
 
 // Routes
-app.use('/api/auth', authRoute);        // register, login, refresh, logout
-app.use('/api/user', userRoutes);       // profile, update, delete
-app.use('/api/ocr', ocrRoutes);        // OCR processing
+app.use('/api/auth', authRoute);        
+app.use('/api/user', userRoutes);       
+app.use('/api/ocr', ocrRoutes);        
 app.use('/api/ocr/receipts', receiptRoutes);
 app.use('/api/transaction', authMiddleware, transactionRoutes);
-app.use('/api/upload', authMiddleware, uploadRoute); // file upload
-app.use('/api/profile', authMiddleware, profileRoute); // user profile
-app.use('/api/stats',  statsRoutes);  // spending statistics
+app.use('/api/upload', authMiddleware, uploadRoute); 
+app.use('/api/profile', authMiddleware, profileRoute);
+app.use('/api/stats',  statsRoutes);  
 // Parse transaction endpoint
 app.use('/api/parse', authMiddleware, async (req, res) => {
   try {
