@@ -2,11 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-// This component serves as the landing page or "Home" screen for the application.
-// It features a visually engaging hero section with a call-to-action.
+
 const Home = () => {
   return (
-    <div className="h-screen flex items-center justify-center relative p-4 font-inter  text-white">
+    <div className="h-screen flex items-center justify-center relative p-4 font-inter text-white">
       {/* Background image layer for a professional visual */}
       <img
         src="/hero-finance.png"
